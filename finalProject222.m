@@ -105,7 +105,7 @@ x_ss_error = ref(1) - s_log(1,length(s_log));
 J_LQR = fitness_function(theta_ss_error, x_ss_error, s_log, u_log, p1, p2, p3, p4, u_max);
 
 %% LQR + GA
-% Set seed for debugging
+% Set seed 
 rng(1);
 % Linearize system
 [A, B] = cartDynamicsLinear(m,M,L,g,b);
